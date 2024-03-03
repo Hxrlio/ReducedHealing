@@ -29,7 +29,7 @@ First, natural burst healing must only function outside of combat. This is a gre
 These changes together should help to introduce a balanced combat experience, at least in the healing department.
 
 ## Compatibility
-Completely unknown. Could have issues with other mods/datapacks that change the evoker's drop table, or mods that manipulate natural regeneration. Compatibility issues will be displayed when provided/discovered (and hopefully resolved where applicable)
+Completely unknown. Could have issues with other mods/datapacks that change the evoker's drop table, or mods that manipulate natural regeneration or overwrite the golden apples. Compatibility issues will be displayed when provided/discovered (and hopefully resolved where applicable)
 
 ## Current stage?
 Early development. Does not make good on its promise to unstack gaps nor alter natural burst healing. Current functionality could be reproduced by a datapack. Can clone off github though.
