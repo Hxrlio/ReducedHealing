@@ -1,6 +1,8 @@
 package mc.hxrl.reducedhealing;
 
 import com.mojang.logging.LogUtils;
+
+import mc.hxrl.reducedhealing.item.VanillaItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -18,12 +20,13 @@ public class ReducedHealing {
     	
     	IEventBus mbus = FMLJavaModLoadingContext.get().getModEventBus();
         mbus.addListener(this::setup);
-
+        VanillaItems.register(mbus);
+        
         MinecraftForge.EVENT_BUS.register(this);
         
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-
+    	
     }
 }
