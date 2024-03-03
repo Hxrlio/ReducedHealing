@@ -1,0 +1,40 @@
+modLoader="javafml" #M
+loaderVersion="[40,)" #M
+license="GNU GPL v3, https://www.gnu.org/licenses/gpl-3.0.en.html" #M
+issueTrackerURL="https://github.com/Hxrlio/ReducedHealing/issues" #O
+
+[[mods]] #M
+modId="reducedhealing" #M
+version="${file.jarVersion}" #M
+displayName="Reduced Healing" #M
+#updateJSONURL="NONE" #O
+displayURL="https://modrinth.com/project/reduced-healing" #O
+logoFile="ReducedHealing.png" #O
+#credits="" #O
+authors="Hxrl" #O
+
+# MATCH_VERSION = BOTH
+# IGNORE_SERVER_VERSION = SERVER
+# IGNORE_ALL_VERSION = CLIENT
+# NONE = OTHER IExtensionPoint.DisplayTest for more
+displayTest="MATCH_VERSION" # MATCH_VERSION is default (#O)
+
+description='''
+Nerfs for acquiring and using vanilla healing sources, to improve challenge without reducing quality of life.
+''' #M
+
+[[dependencies.reducedhealing]]
+    modId="forge" #M
+    mandatory=true #M
+    versionRange="[40,)" #M
+    # BEFORE / AFTER / NONE
+    ordering="AFTER" #M
+    # BOTH / CLIENT / SERVER
+    side="BOTH" #M
+
+[[dependencies.reducedhealing]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="AFTER"
+    side="BOTH"
