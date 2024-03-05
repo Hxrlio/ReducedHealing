@@ -16,7 +16,7 @@ public class CommonEvents {
 	
 	@EventBusSubscriber(modid = ReducedHealing.MODID)
 	public static class CommonForgeEvents {
-		
+		//whenever the player is ticked on either side
 		@SubscribeEvent
 		public static void playerTick(PlayerTickEvent e) {
 			//only in logical server
@@ -36,8 +36,7 @@ public class CommonEvents {
 			//if the player has been combat tagged and its not the one we already logged
 			if (entry.isCombatRelated() && (!entry.equals(CombatEntryMap.getEntry(uuid)))) {
 				//set the new one and restart the timer
-				ReducedHealing.LOGGER.info(String.valueOf(CombatEntryMap.getMap().size()));
-				CombatEntryMap.addCombat(uuid, entry);
+				CombatEntryMap.setEntry(uuid, entry);
 				CombatTimerMap.setTime(uuid, 0);
 			}
 			
@@ -47,15 +46,16 @@ public class CommonEvents {
 			}
 			
 			int i = CombatTimerMap.getTime(uuid);
-			ReducedHealing.LOGGER.info(String.valueOf(i));
+			//if the timer has expired, set it as such
 			if (i >= Config.TIMER_EXPIRE.get()) {
-				ReducedHealing.LOGGER.info("reset");
+				
 				CombatTimerMap.setTime(uuid, -1);
+				return;
+				
 			}
-			
+			//if the timer is active, tick it
 			if (i != -1) {
-				ReducedHealing.LOGGER.info("increment");
-				CombatTimerMap.setTime(uuid, i++);
+				CombatTimerMap.setTime(uuid, i+1);
 			}
 		}
 	}

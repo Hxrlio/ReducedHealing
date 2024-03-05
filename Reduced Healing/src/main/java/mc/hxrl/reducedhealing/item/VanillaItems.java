@@ -11,9 +11,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class VanillaItems {
-	
+	//register for overwritten vanilla items
 	public static final DeferredRegister<Item> VANILLA_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "minecraft");
-	
+	//copy of original properties of both items, but with a stack size of 1.
 	public static final RegistryObject<Item> ENCHANTED_GOLDEN_APPLE = VANILLA_ITEMS.register("enchanted_golden_apple",
 			() -> new EnchantedGoldenAppleItem((new Item.Properties()).stacksTo(1).tab(CreativeModeTab.TAB_FOOD).rarity(Rarity.EPIC).food(Foods.ENCHANTED_GOLDEN_APPLE)));
 	public static final RegistryObject<Item> GOLDEN_APPLE = VANILLA_ITEMS.register("golden_apple",
