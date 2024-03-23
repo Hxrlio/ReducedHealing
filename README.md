@@ -5,7 +5,7 @@ Bring more action to the action while keeping how fast you get back into it.
 No Questions have been asked.
 
 ## Where Mod?
-[Modrinth page](https://modrinth.com/project/reduced-healing) (Awaiting Review)
+[Modrinth page](https://modrinth.com/project/reduced-healing)
 
 ## Where complain Mod broken?
 [Reduced Healing Issues](https://github.com/Hxrlio/ReducedHealing/issues)
@@ -32,7 +32,7 @@ These changes together should help to introduce a balanced combat experience, at
 Completely unknown. Could have issues with other mods/datapacks that change the evoker's drop table, or mods that manipulate natural regeneration or overwrite the golden apples. Compatibility issues will be displayed when provided/discovered (and hopefully resolved where applicable)
 
 ## Current stage?
-Beta. Awaiting review on Modrinth. Can clone off github though.
+Beta. Lacking rigorous testing.
 
 #### Who are you?
 I am Hxrl. Creator of [Custom Coords](https://modrinth.com/mod/customcoords) & [Ender Dream](https://modrinth.com/mod/ender-dream). Essentially, I'm not anyone important. Just an autistic guy who will grew up with, learned how to socialise from, and obsessed over this game. Please feel free to chat to me @ hxrl on Discord, or wherever else you can find me.
